@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 
 variable "sonar_instance_type" {
-  default = "t2.micro"
+  default = "t2.medium"
 }
 variable "key_name" {
   default = "project1"

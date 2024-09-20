@@ -6,6 +6,7 @@
     <groupId>com.aws.codestar.projecttemplates</groupId>
     <artifactId>IMS</artifactId>
     <version>1.1.0</version>
+      <!-- <version>1.1.0-snapshot</version> -->
     <packaging>war</packaging>
     <name>Simple E-Commerce Inventory Management System</name>
 
@@ -17,23 +18,26 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
         <!-- SonarQube -->
-        <sonar.host.url>http://54.235.42.173:9000</sonar.host.url>
-        <sonar.organization>IMS-java-project2024</sonar.organization>
-        <sonar.projectKey>IMS-java-project2024</sonar.projectKey>
-        <sonar.login>sqp_cdf84ccf5529bb07a3de532a46c258d035b6809a</sonar.login>       
+        <sonar.host.url>http://13.232.210.205:9000</sonar.host.url>
+        <sonar.organization>IMS-java-project</sonar.organization>
+        <sonar.projectKey>IMS-java-project</sonar.projectKey>
+        <sonar.login>sqp_100632cb3d6bf75b6170977e70497783984bb1e7</sonar.login>       
     </properties>
 
     <distributionManagement>
+
         <repository>
             <id>release</id>
             <name>libs-release-local</name>
-            <url>http://44.222.202.232:8082/artifactory/libs-release-local/</url>
+            <url>http://15.206.74.92:8082/artifactory/libs-release-local/</url>
         </repository>
+
         <snapshotRepository>
             <id>snapshots</id>
             <name>libs-snapshot-local</name>
-            <url>http://44.222.202.232:8082/artifactory/libs-snapshot-local/</url>
+            <url>http://15.206.74.92:8082/artifactory/libs-snapshot-local/</url>
         </snapshotRepository>
+
     </distributionManagement>
 
     <repositories>
